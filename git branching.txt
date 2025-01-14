@@ -1,3 +1,9 @@
 #branch
 git branch newname : makes new branch with the name newname
-git checkout newname : switches to new branch
+git checkout newname : switches to branch newname
+HEAD in log & Circle in gitgraph point to current branch
+git branch -d branchname : deletes branch
+git branch -D branchname : force deletes branch
+when a new branch is made a turn is made in that point but u will be going
+in the same road unless u checkout to new branch and continue the way from the point u made the turn.
+git checkout -b newname : makes a new branch and switches to it
