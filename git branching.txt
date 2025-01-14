@@ -14,3 +14,7 @@ git merge --abort : to abort merging when conflicts happen and we want to undo m
 solve conflicts in vscode in the final file
 git pull : merges current branch with remote
 git pull origin currentbranch : merges currentbranch with originbranch on remote
+git branch -a : shows us all the branches here & all the branches in the remote bcuz remote branches r hidden
+git branch -vv : shows us which local branch is merged with which remote branch
+git branch --merged : shows the merged branches
+git branch --no-merged : shows the unmerged branches
