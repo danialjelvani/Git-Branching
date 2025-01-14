@@ -7,3 +7,10 @@ git branch -D branchname : force deletes branch
 when a new branch is made a turn is made in that point but u will be going
 in the same road unless u checkout to new branch and continue the way from the point u made the turn.
 git checkout -b newname : makes a new branch and switches to it
+
+#merge
+git merge branchname : merges branchname with current branch
+git merge --abort : to abort merging when conflicts happen and we want to undo merging
+solve conflicts in vscode in the final file
+git pull : merges current branch with remote
+git pull origin currentbranch : merges currentbranch with originbranch on remote
