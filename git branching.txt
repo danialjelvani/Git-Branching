@@ -32,3 +32,10 @@ git push origin --delete testing : deletes remote branch testing
 
 #delete remote tag
 git push origin --delete v1.5 : deletes remote tag v1.5
+
+#when push is rejected bcuz the tip of ur branch is behind its remote counterpart
+this is bcuz theres sth in remote which isn't in local like a license file and first we should: git pull origin main
+then: git push origin main
+we can also push with force even b4 the pulling code: git push -f origin main
+but: git pull <remote> <branch_name> --allow-unrelated-histories
+and then: git push <remote> <branch_name> seems to me the best answer.
