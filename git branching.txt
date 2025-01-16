@@ -39,3 +39,8 @@ then: git push origin main
 we can also push with force even b4 the pulling code: git push -f origin main
 but: git pull <remote> <branch_name> --allow-unrelated-histories
 and then: git push <remote> <branch_name> seems to me the best answer.
+
+#rebasing
+rebasing is used when we want to push sth to the main from a divergent branch after changes have been made to the main branch
+and we want the divergent branch to be rebased with the latest version of the main branch
+git rebase mainbranch : we use this code from the divergent branch to rebase it with the updated main branch
