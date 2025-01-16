@@ -44,3 +44,8 @@ and then: git push <remote> <branch_name> seems to me the best answer.
 rebasing is used when we want to push sth to the main from a divergent branch after changes have been made to the main branch
 and we want the divergent branch to be rebased with the latest version of the main branch
 git rebase mainbranch : we use this code from the divergent branch to rebase it with the updated main branch
+then resolve the conflicts in vscode
+then git add .
+then git rebase --continue
+then u can checkout to main branch and : git merge divergentbranchname
+rebasing rewrites the history so it can ruin others work accidentally
