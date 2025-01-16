@@ -18,3 +18,17 @@ git branch -a : shows us all the branches here & all the branches in the remote 
 git branch -vv : shows us which local branch is merged with which remote branch
 git branch --merged : shows the merged branches
 git branch --no-merged : shows the unmerged branches
+
+#fetch
+git fetch origin : shows the differences between origin remote branch and current branch withous merging anything
+git fetch --all : fetches all the remote branches
+
+#track remote branch
+git checkout --track origin/testing : when theres a testing branch in remote but not in local and we want to add
+and track that branch in local we use this code to make a local branch with the same name tracking the remote branch
+
+#delete remote branch
+git push origin --delete testing : deletes remote branch testing
+
+#delete remote tag
+git push origin --delete v1.5 : deletes remote tag v1.5
